@@ -1,0 +1,11 @@
+// app global css in SCSS form
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.text-brand {
+  color: #f2f2f2;
+}
+.bg-brand {
+  background: #f2f2f2;
+}
