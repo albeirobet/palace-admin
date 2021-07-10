@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-pa-primary">Profile !!!</h1>
+  <h1 class="text-pa-primary">Profile xd !!!</h1>
 </template>
 
 <script>
