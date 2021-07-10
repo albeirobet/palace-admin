@@ -12,9 +12,14 @@
         <p
           class="mb-4 -mt-10 text-4xl font-extrabold text-white sm:mb-8 sm:mt-8"
         >
-          PALACE ADMIN
+          {{ appTitle }}
         </p>
-        <img class="h-300" :src="mainImg" alt="sdgfsd" />
+        <img
+          class="text-white h-300"
+          :src="mainImg"
+          alt="Principal"
+          spinner-color="white"
+        />
 
         <p class="mt-2 text-base text-center text-white sm:mt-8">
           Administre de manera óptima su
@@ -29,18 +34,30 @@
 </template>
 <script>
 import { computed, onBeforeMount, onMounted, reactive, ref } from "vue";
+import { useStore } from "vuex";
+import { useQuasar } from "quasar";
+
 export default {
   setup() {
-    const year = new Date().getFullYear();
+    let store = useStore();
+    const quasar = useQuasar();
+    const year = computed(() => store.getters["storeCommons/currentYear"]);
+    const appTitle = computed(() => store.getters["storeCommons/appTitle"]);
     const mainImg = ref(null);
     const broadcastMainImage = (mainImage) => {
       mainImg.value = mainImage;
     };
+    // quasar.loadingBar.setDefaults({
+    //   color: "purple",
+    //   size: "15px",
+    //   position: "top",
+    // });
 
     return {
       year,
       mainImg,
       broadcastMainImage,
+      appTitle,
     };
   },
 };

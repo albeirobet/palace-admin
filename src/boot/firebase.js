@@ -17,8 +17,18 @@ firebase.initializeApp(firebaseConfig);
 
 //init services
 const auth = firebase.auth();
+
+firebase.getCurrentUser = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+      unsubscribe();
+      resolve(user);
+    }, reject);
+  });
+};
+
 //  export vars
-export { auth };
+export { auth, firebase };
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
 export default boot(async (/* { app, router, ... } */) => {

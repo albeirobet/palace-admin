@@ -4,7 +4,7 @@ const colors = {
   ...defaultColors,
   ...{
     "pa-primary": {
-      DEFAULT: "#2f4858",
+      DEFAULT: "#0F172A",
     },
     "pa-secondary": {
       DEFAULT: "#35537c",
@@ -13,13 +13,13 @@ const colors = {
       DEFAULT: "#5f5697",
     },
     "pa-quaternary": {
-      DEFAULT: "#9b4d9e",
+      DEFAULT: "#005a78",
     },
     "pa-quinary": {
       DEFAULT: "#d53a8c",
     },
     "pa-accent": {
-      DEFAULT: "#ff2e63",
+      DEFAULT: "#538ff8",
     },
   },
 };

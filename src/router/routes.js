@@ -1,18 +1,13 @@
 const routes = [
   {
-    path: "/xxx",
-    component: () => import("layouts/MainLayout.vue"),
-    children: [
-      { path: "", component: () => import("pages/Index.vue") },
-      { path: "/about", component: () => import("pages/About.vue") },
-    ],
+    path: "/",
+    redirect: "/app/user/home",
   },
   {
     path: "/auth",
     redirect: "/auth/login",
     props: true,
     component: () => import("layouts/Auth.vue"),
-    props: true,
     children: [
       {
         path: "/auth/login",
@@ -32,14 +27,69 @@ const routes = [
         component: () => import("pages/auth/RecoverAccount.vue"),
         props: true,
       },
+      {
+        path: "/auth/account-actions",
+        name: "AccountActions",
+        component: () => import("pages/auth/AccountActions.vue"),
+        props: true,
+      },
+    ],
+  },
+  {
+    path: "/app",
+    redirect: "/app/user/home",
+    props: true,
+    component: () => import("layouts/App.vue"),
+    meta: {
+      requireAuth: true,
+      // authorizedRoles: ["user"],
+    },
+    children: [
+      {
+        path: "/app/user/home",
+        name: "Home",
+        component: () => import("pages/app/user/Home.vue"),
+        props: true,
+      },
+      {
+        path: "/app/user/profile",
+        name: "Profile",
+        component: () => import("pages/app/user/Profile.vue"),
+        props: true,
+        // meta: {
+        //   authorizedRoles: ["admin"],
+        // },
+      },
     ],
   },
 
+  {
+    path: "/forbidden",
+    redirect: "/forbidden",
+    component: () => import("layouts/Auth.vue"),
+    children: [
+      {
+        path: "/forbidden",
+        name: "Forbidden",
+        component: () => import("pages/app/commons/Forbidden.vue"),
+        props: true,
+      },
+    ],
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
     path: "/:catchAll(.*)*",
-    component: () => import("pages/Error404.vue"),
+    redirect: "/not-found",
+    component: () => import("layouts/Auth.vue"),
+    children: [
+      {
+        path: "/:catchAll(.*)*",
+        name: "NotFound",
+        component: () => import("pages/app/commons/NotFound.vue"),
+        props: true,
+      },
+    ],
   },
 ];
 
