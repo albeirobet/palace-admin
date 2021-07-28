@@ -12,7 +12,7 @@
         <p
           class="mb-4 -mt-10 text-4xl font-semibold text-white sm:mb-8 sm:mt-8"
         >
-          {{ appTitle }}
+          {{ appTitle }} xd
         </p>
         <img
           class="text-white h-300"
