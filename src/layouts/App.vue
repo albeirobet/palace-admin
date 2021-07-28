@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh lpR lFf" class="main-q-layout">
+  <q-layout view="lHh lpR lFf">
     <Header />
     <Drawer />
     <q-page-container>
@@ -34,10 +34,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.main-q-layout {
-  font-family: "Poppins", sans-serif;
-  // font-size: 40px;
-}
-</style>

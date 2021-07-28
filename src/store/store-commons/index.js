@@ -4,9 +4,9 @@ const state = {
   drawerState: false,
   currentYear: new Date().getFullYear(),
   whiteAvatar:
-    "https://ui-avatars.com/api/?name=Palace+Admin&size=1000&background=fff&color=ff2e63",
+    "https://ui-avatars.com/api/?name=Palace+Admin&size=1000&background=fff&color=538ff8",
   colorAvatar:
-    "https://ui-avatars.com/api/?name=Palace+Admin&size=1000&background=ff2e63&color=fff",
+    "https://ui-avatars.com/api/?name=Palace+Admin&size=1000&background=538ff8&color=fff",
   displayName: "",
   emailUser: "",
   appTitle: "PALACE ADMIN",
@@ -95,11 +95,11 @@ const actions = {
             var letters = matches.join("");
             commit(
               "updateWhiteAvatar",
-              `https://ui-avatars.com/api/?name=${letters}&size=1000&background=fff&color=ff2e63`
+              `https://ui-avatars.com/api/?name=${letters}&size=1000&background=fff&color=538ff8`
             );
             commit(
               "updateColorAvatar",
-              `https://ui-avatars.com/api/?name=${letters}&size=1000&background=ff2e63&color=fff`
+              `https://ui-avatars.com/api/?name=${letters}&size=1000&background=538ff8&color=fff`
             );
           }
         }

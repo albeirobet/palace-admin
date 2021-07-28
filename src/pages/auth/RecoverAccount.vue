@@ -2,10 +2,10 @@
   <section
     class="flex flex-col items-center justify-center bg-white h-400 sm:h-500"
   >
-    <p class="mt-8 text-2xl font-extrabold text-pa-primary sm:mt-10">
+    <p class="mt-8 text-2xl font-semibold text-pa-font sm:mt-10">
       Recuperar Cuenta
     </p>
-    <p class="mx-1.5 mt-3 text-sm text-center text-pa-primary">
+    <p class="mx-1.5 mt-3 text-sm text-center text-pa-font">
       Si posee una cuenta registrada con correo electrónico por favor ingreselo
       a continuación
     </p>
@@ -51,11 +51,11 @@
         to="/auth/login"
         class="
           text-sm
-          font-extrabold
+          font-semibold
           text-center
           underline
           text-pa-accent
-          hover:text-pa-primary
+          hover:text-pa-font
         "
       >
         INICIAR SESIÓN</router-link
@@ -66,7 +66,7 @@
       <a
         href="https://www.runcode.co"
         target="_blank"
-        class="font-extrabold text-pa-accent"
+        class="font-semibold text-pa-accent"
         >RunCode Ingeniería</a
       >
     </p>

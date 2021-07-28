@@ -4,22 +4,40 @@
 @import "tailwindcss/utilities";
 
 .text-tertiary {
-  color: #5f5697;
+  color: #007383;
 }
 .bg-tertiary {
-  background: #5f5697;
+  background: #007383;
 }
 
 .text-quaternary {
-  color: #9b4d9e;
+  color: #00a68b;
 }
 .bg-quaternary {
-  background: #9b4d9e;
+  background: #00a68b;
 }
 
 .text-quinary {
-  color: #d53a8c;
+  color: #80d47c;
 }
 .bg-quinary {
-  background: #d53a8c;
+  background: #80d47c;
+}
+
+.text-font {
+  color: #525970;
+}
+.bg-font {
+  background: #525970;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
+  margin: 0px;
+  line-height: 0.7;
 }

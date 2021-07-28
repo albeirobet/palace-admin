@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center bg-white h-720">
-    <p class="mt-8 text-2xl font-extrabold text-pa-primary sm:mt-10">
+    <p class="mt-8 text-2xl font-semibold text-pa-font sm:mt-10">
       Registrarse con
     </p>
     <div class="flex flex-row mt-3 space-x-2">
@@ -29,7 +29,7 @@
         >
       </q-btn>
     </div>
-    <p class="mt-3 text-sm font-extrabold text-pa-primary">O con:</p>
+    <p class="mt-3 text-sm font-semibold text-pa-font">O con:</p>
     <q-form
       class="max-w-xs mt-3 full-width"
       @submit.prevent="userRegisterWithCredentials"
@@ -71,18 +71,18 @@
       />
 
       <div class="mt-4">
-        <span class="text-center text-pa-primary"
-          >Al <span class="font-extrabold text-pa-accent">REGISTRARSE</span>,
+        <span class="text-center text-pa-font"
+          >Al <span class="font-semibold text-pa-accent">REGISTRARSE</span>,
           declara haber leído y aceptado la
           <a
             href="#"
-            class="font-extrabold underline  text-pa-accent hover:text-pa-primary"
+            class="font-semibold underline text-pa-accent hover:text-pa-font"
             >Política de Tratamiento de Datos</a
           >
           y los
           <a
             href="#"
-            class="font-extrabold underline  text-pa-accent hover:text-pa-primary"
+            class="font-semibold underline text-pa-accent hover:text-pa-font"
             >Terminos y Condiciones de Uso</a
           >
         </span>
@@ -114,7 +114,7 @@
       <br />
       <router-link
         to="/auth/login"
-        class="text-sm font-extrabold text-center underline  text-pa-accent hover:text-pa-primary"
+        class="text-sm font-semibold text-center underline text-pa-accent hover:text-pa-font"
       >
         INICIAR SESIÓN</router-link
       >
@@ -124,7 +124,7 @@
       <a
         href="https://www.runcode.co"
         target="_blank"
-        class="font-extrabold text-pa-accent"
+        class="font-semibold text-pa-accent"
         >RunCode Ingeniería</a
       >
     </p>

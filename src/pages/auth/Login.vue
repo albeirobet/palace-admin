@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col items-center justify-center bg-white h-560">
-    <p class="mt-8 text-2xl font-extrabold text-pa-primary sm:mt-10">
+    <p class="mt-8 text-2xl font-semibold text-pa-font sm:mt-10">
       Iniciar Sesión con
     </p>
     <div class="flex flex-row mt-3 space-x-2">
@@ -29,7 +29,7 @@
         >
       </q-btn>
     </div>
-    <p class="mt-3 text-sm font-extrabold text-pa-primary">O con:</p>
+    <p class="mt-3 text-sm font-semibold text-pa-font">O con:</p>
     <q-form
       class="max-w-xs mt-3 full-width"
       @submit.prevent="userLoginWithCredentials"
@@ -63,7 +63,7 @@
         <q-toggle
           v-model="reqLogin.rememberMe"
           color="accent"
-          class="text-pa-primary"
+          class="text-pa-font"
           label="Recuerdame"
         />
         <router-link
@@ -72,11 +72,11 @@
             mt-3
             mr-1.5
             text-xs
-            font-extrabold
+            font-semibold
             text-center
             underline
             text-pa-accent
-            hover:text-pa-primary
+            hover:text-pa-font
           "
         >
           OLVIDÉ MI CONTRASEÑA</router-link
@@ -108,7 +108,7 @@
       <br />
       <router-link
         to="/auth/register"
-        class="text-sm font-extrabold text-center underline  text-pa-accent hover:text-pa-primary"
+        class="text-sm font-semibold text-center underline  text-pa-accent hover:text-pa-font"
       >
         REGISTRAR CUENTA</router-link
       >
@@ -118,7 +118,7 @@
       <a
         href="https://www.runcode.co"
         target="_blank"
-        class="font-extrabold text-pa-accent"
+        class="font-semibold text-pa-accent"
         >RunCode Ingeniería</a
       >
     </p>

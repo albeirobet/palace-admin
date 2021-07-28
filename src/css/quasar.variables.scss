@@ -14,16 +14,26 @@
 
 // https://mycolor.space/?hex=%23FF2E63&sub=1
 
-$primary: #2f4858;
-$secondary: #35537c;
-$tertiary: #5f5697;
-$quaternary: #9b4d9e;
-$quinary: #d53a8c;
-$accent: #ff2e63;
+$text-weights: (
+  thin: 300,
+  light: 400,
+  regular: 600,
+  medium: 700,
+  bold: 800,
+  bolder: 900,
+) !default;
 
-$dark: #1d1d1d;
+$primary: #0f172a;
+$secondary: #00425f;
+$tertiary: #007383;
+$quaternary: #00a68b;
+$quinary: #80d47c;
+$accent: #538ff8;
+$font: #525970;
+
+$dark: #0f172a;
 
 $positive: #21ba45;
-$negative: #ff2e63;
+$negative: #c10015;
 $info: #31ccec;
 $warning: #f2c037;

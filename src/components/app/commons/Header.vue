@@ -1,12 +1,12 @@
 <template>
-  <q-header elevated class="bg-white text-pa-primary" height-hint="98">
+  <q-header elevated class="bg-white text-pa-font" height-hint="98">
     <q-toolbar>
       <q-btn flat round icon="menu" @click="toggleLeftDrawer" />
       <q-toolbar-title>
         <span
-          class="flex flex-col mt-2 mb-2 text-lg font-extrabold text-pa-accent"
+          class="flex flex-col mt-2 mb-2 text-lg font-semibold text-pa-accent"
           >{{ appTitle }}
-          <span class="-mt-1 text-base text-pa-primary">ARCADIA II</span>
+          <span class="-mt-1 text-base text-pa-font">ARCADIA II</span>
         </span>
       </q-toolbar-title>
 
@@ -15,11 +15,13 @@
           <q-list dense class="mt-2">
             <q-item clickable v-close-popup v-ripple to="/app/user/profile">
               <q-item-section>
-                <q-item-label lines="1">Perfil</q-item-label>
+                <q-item-label class="font-medium text-pa-font" lines="1"
+                  >Perfil</q-item-label
+                >
                 <q-item-label caption>Gestionar Cuenta</q-item-label>
               </q-item-section>
               <q-item-section side>
-                <q-icon name="manage_accounts" color="tertiary" />
+                <q-icon name="manage_accounts" color="primary" />
               </q-item-section>
             </q-item>
             <q-separator class="my-1" />
@@ -30,7 +32,9 @@
               @click="userLogoutFunction"
             >
               <q-item-section>
-                <q-item-label lines="1">Cerrar Sesión</q-item-label>
+                <q-item-label class="font-medium text-pa-font" lines="1"
+                  >Cerrar Sesión</q-item-label
+                >
                 <q-item-label caption>Salir del Sistema</q-item-label>
               </q-item-section>
               <q-item-section side>

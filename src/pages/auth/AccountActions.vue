@@ -2,11 +2,11 @@
   <section
     class="flex flex-col items-center justify-center bg-white h-400 sm:h-500"
   >
-    <p class="mt-8 text-2xl font-extrabold text-pa-primary sm:mt-10">
+    <p class="mt-8 text-2xl font-semibold text-pa-font sm:mt-10">
       {{ accountAccountActionsTitle }}
     </p>
     <p
-      class="mx-1.5 mt-3 text-sm text-center text-pa-primary"
+      class="mx-1.5 mt-3 text-sm text-center text-pa-font"
       v-if="!accountActionsResetPassword"
     >
       {{ accountAccountActionsMessage }}
@@ -22,11 +22,11 @@
         class="mt-3"
         filled
         type="password"
-        label="Contraseña *"
-        hint="Contraseña"
+        label="Nueva contraseña *"
+        hint="Nueva contraseña"
         lazy-rules
         :rules="[
-          (val) => (val !== null && val !== '') || 'Contraseña no válida',
+          (val) => (val !== null && val !== '') || 'Nueva contraseña no válida',
         ]"
       />
       <q-input
@@ -35,11 +35,12 @@
         class="mt-3"
         filled
         type="password"
-        label="Confirmar contraseña *"
-        hint="Confirmar contraseña"
+        label="Confirmar nueva contraseña *"
+        hint="Confirmar nueva contraseña"
         lazy-rules
         :rules="[
-          (val) => (val !== null && val !== '') || 'Contraseña no válida',
+          (val) =>
+            (val !== null && val !== '') || 'Contraseña confirmada no válida',
         ]"
       />
 
@@ -69,7 +70,15 @@
     </q-form>
     <router-link
       to="/auth/login"
-      class="mt-3 text-sm font-extrabold text-center underline  text-pa-accent hover:text-pa-primary"
+      class="
+        mt-3
+        text-sm
+        font-semibold
+        text-center
+        underline
+        text-pa-accent
+        hover:text-pa-font
+      "
     >
       INICIAR SESIÓN</router-link
     >
@@ -78,7 +87,7 @@
       <a
         href="https://www.runcode.co"
         target="_blank"
-        class="font-extrabold text-pa-accent"
+        class="font-semibold text-pa-accent"
         >RunCode Ingeniería</a
       >
     </p>

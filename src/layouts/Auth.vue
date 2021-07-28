@@ -10,7 +10,7 @@
         class="flex flex-col items-center justify-center  left-section h-500 sm:h-auto"
       >
         <p
-          class="mb-4 -mt-10 text-4xl font-extrabold text-white sm:mb-8 sm:mt-8"
+          class="mb-4 -mt-10 text-4xl font-semibold text-white sm:mb-8 sm:mt-8"
         >
           {{ appTitle }}
         </p>
@@ -65,11 +65,10 @@ export default {
 
 <style lang="scss" scoped>
 .main-q-layout {
-  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 .left-section {
-  background: linear-gradient(45deg, $accent, $quaternary);
+  background: linear-gradient(45deg, $accent, $secondary);
 }
 
 .q-page-container {

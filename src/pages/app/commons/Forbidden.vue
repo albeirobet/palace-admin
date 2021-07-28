@@ -2,10 +2,10 @@
   <section
     class="flex flex-col items-center justify-center bg-white h-400 sm:h-500"
   >
-    <p class="mt-8 text-2xl font-extrabold text-pa-primary sm:mt-10">
+    <p class="mt-8 text-2xl font-semibold text-pa-font sm:mt-10">
       ¡Recurso No Autorizado!
     </p>
-    <p class="mx-1.5 mt-3 text-sm text-center text-pa-primary">
+    <p class="mx-1.5 mt-3 text-sm text-center text-pa-font">
       El recurso al cual está intentando acceder es Protegido
     </p>
     <q-btn
@@ -22,7 +22,7 @@
       <a
         href="https://www.runcode.co"
         target="_blank"
-        class="font-extrabold text-pa-accent"
+        class="font-semibold text-pa-accent"
         >RunCode Ingeniería</a
       >
     </p>

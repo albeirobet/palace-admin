@@ -53,12 +53,30 @@ const routes = [
       },
       {
         path: "/app/user/profile",
+        redirect: "/app/user/profile/contact-data",
         name: "Profile",
         component: () => import("pages/app/user/Profile.vue"),
         props: true,
         // meta: {
         //   authorizedRoles: ["admin"],
         // },
+        children: [
+          {
+            path: "/app/user/profile/contact-data",
+            name: "ContactData",
+            component: () => import("components/app/user/ContactData.vue"),
+          },
+          {
+            path: "/app/user/profile/personal-data",
+            name: "PersonalData",
+            component: () => import("components/app/user/PersonalData.vue"),
+          },
+          {
+            path: "/app/user/profile/account-settings",
+            name: "AccountSettings",
+            component: () => import("components/app/user/AccountSettings.vue"),
+          },
+        ],
       },
     ],
   },

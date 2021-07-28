@@ -92,7 +92,7 @@
           <a
             href="https://www.runcode.co"
             target="_blank"
-            class="font-extrabold text-pa-accent"
+            class="font-semibold text-pa-accent"
             >RunCode Ingeniería</a
           >
         </p>
@@ -106,7 +106,6 @@
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
-import defaultImageProfile from "../../../assets/img/auth/default_image_profile.svg";
 export default {
   setup() {
     let store = useStore();
@@ -128,7 +127,6 @@ export default {
     return {
       drawerState,
       currentYear,
-      defaultImageProfile,
       whiteAvatar,
       displayName,
     };
