@@ -1,5 +1,5 @@
 module.exports = {
-  ACCESS_CONTROL_MS_URL: "http://192.168.0.9:3001",
+  ACCESS_CONTROL_MS_URL: "https://access-control-pa.herokuapp.com",
   MAIN_ORIGIN: "PALACEADMIN.CO",
   GOOGLE_ORIGIN: "GOOGLE.COM",
   FACEBOOK_ORIGIN: "FACEBOOK.COM",
